@@ -1,7 +1,7 @@
 # Testing boilerplate
 This project is a boilerplate for snapshot testing a simple React application with Jest.
 
-Check out [article](https:/dtsiki.github.io/blog/keep-calm-and-test) in my blog.
+Check out [article](http:/dtsiki.github.io/blog/keep-calm-and-test) in my blog.
 ### Installation
 Clone this repository:
 
