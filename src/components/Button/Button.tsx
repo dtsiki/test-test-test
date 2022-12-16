@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 
 export enum ButtonVariant {
@@ -8,18 +8,29 @@ export enum ButtonVariant {
   DANGER = 'is-danger'
 }
 
+export enum ButtonSize {
+  NORMAL = 'is-normal',
+  LARGE = 'is-large'
+}
+
 interface ButtonProps {
   children: ReactNode;
   variant?: ButtonVariant;
+  size?: ButtonSize;
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, variant = ButtonVariant.INFO, onClick }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  size = ButtonSize.NORMAL,
+  variant = ButtonVariant.INFO,
+  onClick
+}: ButtonProps) => {
   const bind = classNames.bind([]);
 
   return (
     <button
-      className={bind(['button', variant])}
+      className={bind(['button', variant, size])}
       onClick={onClick}>
       {children}
     </button>

@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   settings: {
     react: {
@@ -16,7 +17,7 @@ module.exports = {
   ignorePatterns: [
     'node_modules/*',
     '.out/*',
-    '!.prettierrc.js',
+    '!.prettierrc.js'
   ],
   plugins: [
     '@typescript-eslint',

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders DANGER correctly 1`] = `
+<button
+  className="button DANGER normal"
+>
+  Click me
+</button>
+`;
+
+exports[`Button renders INFO correctly 1`] = `
+<button
+  className="button INFO normal"
+>
+  Click me
+</button>
+`;
+
+exports[`Button renders SUCCESS correctly 1`] = `
+<button
+  className="button SUCCESS normal"
+>
+  Click me
+</button>
+`;
+
+exports[`Button renders WARNING correctly 1`] = `
+<button
+  className="button WARNING normal"
+>
+  Click me
+</button>
+`;
